@@ -1,0 +1,82 @@
+/*
+BEM - Forma de nombrar clases CSS
+
+Se usa clases para todo
+Id = Aplicar funcionalidad (javascript)
+
+.bloque
+.bloque__elemento
+.bloque__elemento--modificador
+
+1. No usar ID
+2. No usar etiquetas
+3. Que todo sea un key selector (seleccionar justo el elemento al cuál se le darán estilos)
+4. 
+
+*/
+
+/* Estilos sin metodología BEM
+.cards {
+    width: 400px;
+    margin: 10px auto;
+    box-shadow: 0px 0px 20px gray;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.cards .card {
+    background-color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px;
+    padding: 10px;
+}
+
+.cards .card h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cards .card a {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+*/
+
+/*Metodología BEM*/
+.cards {
+    width: 400px;
+    margin: 10px auto;
+    box-shadow: 0px 0px 20px gray;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.cards__card {
+    background-color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px;
+    padding: 10px;
+}
+
+.card__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card__link {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.card__link--red{
+    background-color: lightcoral;
+}
+
+
+
