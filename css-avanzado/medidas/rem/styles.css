@@ -1,10 +1,10 @@
-body {
-    font-size: 20px;
+/*1rem = 16px*/
+html {
+    font-size: 10px;
 }
-
 .caja {
-    width: 13em;
-    height: 13em;
+    width: 25rem;
+    height: 25rem;
     background-color: aquamarine;
     border: solid 1px black;
     text-align: center;
