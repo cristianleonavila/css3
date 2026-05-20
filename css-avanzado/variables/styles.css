@@ -1,0 +1,18 @@
+:root {
+    --primary: #3b85f3;
+    --danger: #e66161;
+    --info: #76e1f0;
+    --warning: #eebc71;
+    --success: #61e677;
+    --font: 'Courier New';
+}
+
+h1 {
+    color: var(--primary);
+    font-family: var(--font);
+}
+
+.text-success {
+    color: var(--success);
+    font-family: var(--font);
+}
