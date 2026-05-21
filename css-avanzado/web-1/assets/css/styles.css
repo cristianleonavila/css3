@@ -9,6 +9,8 @@
    --subtitle-color: #888;
    --title-color: #222222;
    --text-color: #555;
+   --review-borders: #E5E6E7;
+   --company-text-color: #A5A6A7;
 }
 /*Estilos Generales*/
 html {
@@ -293,10 +295,12 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: row;
     margin-bottom: 3rem;
+    text-align: justify;
 }
 
 .info__bio {
     flex-basis: 50%;
+    margin-right: 3rem;
 }
 
 .personal__info {
@@ -319,7 +323,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0.5rem;
 }
 
-.about__services {
+.about__services,
+.about__reviews {
     width: 100%;
     margin-bottom: 3rem;
 }
@@ -331,17 +336,20 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
 }
 
-.services__header {
+.services__header,
+.reviews__header {
     display: inline-block;
     position: relative;
-    margin-bottom: 2.5rem;
+    margin-bottom: 5rem;
 }
 
-.services__title {
+.services__title,
+.reviews__title {
     font-size: 2.1rem;
 }
 
-.services__title::after {
+.services__title::after,
+.reviews__title::after {
     content: "";
     position: absolute;
     background-size: 6px 6px;
@@ -366,16 +374,35 @@ h1, h2, h3, h4, h5, h6 {
 
 .service__description {
     font-size: 1.4rem;
-
-}
-
-.service__icon-container {
-
+    text-align: justify;
 }
 
 .service__icon {
     color: var(--secondary);
     font-size: 3.8rem;
+}
+
+/*Reviews*/
+
+.reviews {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.review {
+    flex-basis: calc(50% - 2.5rem);
+    border: solid 2px var(--review-borders);
+    border-radius: 2rem;
+    padding-top: 0;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 1.5rem;
+    margin-right: 2.5rem;
+}
+
+.review__text {
+    /*text-align: justify;*/
 }
 
 
